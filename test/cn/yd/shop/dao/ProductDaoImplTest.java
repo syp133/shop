@@ -1,7 +1,5 @@
 package cn.yd.shop.dao;
 
-import static org.junit.Assert.fail;
-
 import java.util.ArrayList;
 
 import org.junit.AfterClass;
@@ -30,13 +28,13 @@ public class ProductDaoImplTest {
 	
 	@Test
 	public void testGetById() {
-		Product product = daoImpl.getById(3);
-		System.out.println(product);
+		ArrayList<Product> product = daoImpl.getById(3);
+		System.out.println(product.get(0));
 	}
 	
 	@Test
-	public void testQueryName() {
-		ArrayList<Product> proList = daoImpl.queryByBame("");
+	public void testgetByName() {
+		ArrayList<Product> proList = daoImpl.getByName("");
 		for(Product temp:proList){
 			System.out.println(temp);
 		}

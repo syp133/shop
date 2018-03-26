@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.sun.xml.internal.ws.Closeable;
-
 // 此工具类用来完成数据库的连接与释放操作
 public class JdbcUtil {
 
